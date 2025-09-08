@@ -80,7 +80,7 @@ export default function PersonalityQuiz() {
       />
       <div className="relative mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mx-auto max-w-2xl md:mt-18 text-center">
+        <div className="mx-auto max-w-2xl md:mt-18 mt-10 text-center">
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight">
             Personality <span className="bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#A78BFA] bg-clip-text text-transparent">Quiz</span>
           </h2>
