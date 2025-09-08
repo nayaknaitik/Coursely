@@ -38,7 +38,7 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
         className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:24px_24px] opacity-10"
       />
 
-      <div className="relative mx-auto ml-20 min-w-8xl px-4 py-24 sm:px-6 md:py-32 mt-20 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="relative mx-auto md:ml-20 min-w-8xl px-4 py-24 sm:px-6 md:py-32 md:mt-20 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Left Side (Text Content) */}
         <div>
           <motion.div

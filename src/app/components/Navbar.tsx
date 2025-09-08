@@ -45,18 +45,14 @@ export default function Navbar() {
       />
 
       {/* Nav container */}
-      <div
-        className={[
-          "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",
-          "transition-colors",
-        ].join(" ")}
-      >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 transition-colors">
         <nav
           className={[
             "mt-2 flex h-14 items-center justify-between rounded-xl px-3",
-            // Transparent dark with blur; elevate on scroll
             "backdrop-blur-md bg-black/20",
-            elevated ? "shadow-lg shadow-black/20 ring-1 ring-white/10" : "ring-1 ring-white/5",
+            elevated
+              ? "shadow-lg shadow-black/20 ring-1 ring-white/10"
+              : "ring-1 ring-white/5",
           ].join(" ")}
         >
           {/* Brand */}
@@ -78,6 +74,14 @@ export default function Navbar() {
                 {l.label}
               </a>
             ))}
+
+            {/* Sign Up / Log In button */}
+            <Link
+              href="/auth"
+              className="ml-3 rounded-lg bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#A78BFA] px-4 py-2 text-sm font-semibold text-white shadow hover:opacity-90 transition"
+            >
+              Sign Up / Log In
+            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -104,6 +108,15 @@ export default function Navbar() {
                   {l.label}
                 </a>
               ))}
+
+              {/* Mobile Sign Up / Log In button */}
+              <Link
+                href="/auth"
+                onClick={() => setOpen(false)}
+                className="mt-2 rounded-lg bg-gradient-to-r from-[#60A5FA] via-[#93C5FD] to-[#A78BFA] px-4 py-2 text-center text-sm font-semibold text-white shadow hover:opacity-90 transition"
+              >
+                Sign Up / Log In
+              </Link>
             </div>
           </div>
         )}
