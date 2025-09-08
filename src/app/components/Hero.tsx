@@ -84,13 +84,13 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
-            <button
-              onClick={onPrimary}
-              className="group inline-flex items-center justify-center rounded-lg bg-[#2987D7] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:translate-y-[-1px] hover:bg-[#2276BD] active:translate-y-0"
-            >
-              Try Aptitude Quiz
-              <span className="ml-2 inline-block transition group-hover:translate-x-0.5">→</span>
-            </button>
+            <Link
+  href="/quiz"
+  className="group inline-flex items-center justify-center rounded-lg bg-[#2987D7] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:translate-y-[-1px] hover:bg-[#2276BD] active:translate-y-0"
+>
+  Try Personality Quiz
+  <span className="ml-2 inline-block transition group-hover:translate-x-0.5">→</span>
+</Link>
 
             <button
               onClick={onSecondary}
