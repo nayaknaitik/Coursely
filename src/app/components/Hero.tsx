@@ -42,7 +42,7 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
         {/* Left Side (Text Content) */}
         <div>
           <motion.div
-            className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs md:text-sm backdrop-blur"
+            className="inline-flex max-md:hidden items-center max-md:text-center max-md:items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs md:text-sm backdrop-blur"
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
@@ -52,7 +52,7 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
           </motion.div>
 
           <motion.h1
-            className="mt-5 text-4xl font-extrabold tracking-tight md:text-6xl leading-[1.05]"
+            className="mt-5 text-4xl font-extrabold tracking-tight max-md:text-center max-md:items-center md:text-6xl leading-[1.05]"
             initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-20% 0px -20% 0px" }}
@@ -66,7 +66,7 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
           </motion.h1>
 
           <motion.p
-            className="mt-4 min-w-2xl text-sm text-slate-300 md:text-lg"
+            className="mt-4 md:min-w-2xl max-md:text-center  max-md:items-center text-sm text-slate-300 md:text-lg"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
