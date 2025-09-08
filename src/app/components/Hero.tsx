@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Target, Map, Search, Calendar, BookOpen } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import HeroImage from '../../../public/Hero.png';
+import HeroImage from "../../../public/Hero.png";
 
 type HeroProps = {
   onPrimary?: () => void;
@@ -72,9 +72,10 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
           >
-            AI-driven recommendations + verified government data + visual career maps in a single,
-            lightweight web app. Reduce confusion, prevent dropouts, and promote access to affordable
-            education—anywhere, on any device.
+            AI-driven recommendations + verified government data + visual career
+            maps in a single, lightweight web app. Reduce confusion, prevent
+            dropouts, and promote access to affordable education—anywhere, on
+            any device.
           </motion.p>
 
           <motion.div
@@ -85,12 +86,14 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           >
             <Link
-  href="/quiz"
-  className="group inline-flex items-center justify-center rounded-lg bg-[#2987D7] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:translate-y-[-1px] hover:bg-[#2276BD] active:translate-y-0"
->
-  Try Personality Quiz
-  <span className="ml-2 inline-block transition group-hover:translate-x-0.5">→</span>
-</Link>
+              href="/quiz"
+              className="group inline-flex items-center justify-center rounded-lg bg-[#2987D7] px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition hover:translate-y-[-1px] hover:bg-[#2276BD] active:translate-y-0"
+            >
+              Try Personality Quiz
+              <span className="ml-2 inline-block transition group-hover:translate-x-0.5">
+                →
+              </span>
+            </Link>
 
             <button
               onClick={onSecondary}
@@ -134,7 +137,7 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
         </div>
 
         {/* Right Side (Image) */}
-        <div className="relative w-full h-[300px] md:h-[480px]">
+        <div className="relative hidden md:block w-full h-[300px] md:h-[480px]">
           <Image
             src={HeroImage} // leave blank for now
             alt="Hero Illustration"
