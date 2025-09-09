@@ -60,7 +60,7 @@ export default function Navbar() {
             href="/"
             className="text-lg font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70"
           >
-            Coursely
+            CareerMap
           </Link>
 
           {/* Desktop links */}
