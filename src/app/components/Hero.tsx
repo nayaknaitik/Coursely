@@ -48,7 +48,7 @@ export default function Hero({ onPrimary, onSecondary }: HeroProps) {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.05 }}
           >
             <span className="h-2 w-2 rounded-full bg-[#4ADE80]" />
-            Smart India Hackathon – Theme: Smart Education · Team "Aspira"
+            Smart India Hackathon – Theme: Smart Education · Team Aspira
           </motion.div>
 
           <motion.h1
